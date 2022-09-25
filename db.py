@@ -2,8 +2,8 @@ import pymongo
 import uuid
 import datetime
 client = pymongo.MongoClient("mongodb+srv://ramadhanisal:ramadhanisal@cluster0.vk2qhxu.mongodb.net/?retryWrites=true&w=majority")
-db = client.faisal
-collection = db.sunrise
+db = db.sunrise
+collection = client.smkn4
 
 def save_to_db(kecepatan,latitude,longitude) -> tuple:
     try:
