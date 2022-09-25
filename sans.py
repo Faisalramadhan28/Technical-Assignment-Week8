@@ -5,8 +5,8 @@ import datetime
 
 app = Flask(__name__)
 client = pymongo.MongoClient("mongodb+srv://ramadhanisal:ramadhanisal@cluster0.vk2qhxu.mongodb.net/?retryWrites=true&w=majority")
-db = client.sans
-collection = db.sunrise
+db = db.sunrise
+collection = client.smkn4
 
 @app.route('/week8',methods=['GET','POST'])
 def location_application():
